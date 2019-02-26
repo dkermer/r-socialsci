@@ -5,7 +5,7 @@ exercises: 30
 questions:
 - "What data types are available in R?"
 - "What is an object?"
-- "How can values be initially assigned to variables of different data types?"
+- "How can values be initially assigned to objects of different data types?"
 - "What arithmetic and logical operators can be used?"
 - "How can subsets be extracted from vectors and data frames?"
 - "How does R treat missing values?"
@@ -93,8 +93,10 @@ for issues in the styling of your code.
 >
 > What are known as `objects` in `R` are known as `variables` in many other
 > programming languages. Depending on the context, `object` and `variable` can
-> have drastically different meanings. However, in this lesson, the two words
-> are used synonymously. For more information see:
+> have drastically different meanings, even if they are sometimes used synonymously. 
+> Because we will be mostly using objects that represent data tables, in which 
+> a 'variable' is not an 'object', we will continue to use the term object here. 
+> For more information see:
 > [https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Objects](https://cran.r-project.org/doc/manuals/r-release/R-lang.html#Objects)
 {: .callout}
 
@@ -172,8 +174,8 @@ to select the whole line), then press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> +
 
 > ## Exercise
 >
-> Create two variables `length` and `width` and assign them values. It should be noted that R Studio might add "()" after width and if you leave the parentheses you will get unexpected results. This is why you might see other programmers abbreviate common words.
-> Create a third variable `area` and give it a value based on the current values of `length` and `width`.
+> Create two objects `length` and `width` and assign them values. Note: Because the term "width" is also the name of a function, RStudio might add parenthesess "()", which would be incorrect and cause unexpected results. Some programmers thus abbreviate common words to avoid this issue.
+> Create a third object `area` and give it a value based on the current values of `length` and `width`.
 > Show that changing the values of either `length` and `width` does not affect the value of `area`.
 > 
 > > ## Solution
@@ -488,7 +490,7 @@ no_membrs[no_membrs >= 7 & no_membrs == 3]
 Here, `<` stands for "less than", `>` for "greater than", `>=` for "greater than
 or equal to", and `==` for "equal to". The double equal sign `==` is a test for
 numerical equality between the left and right hand sides, and should not be
-confused with the single `=` sign, which performs variable assignment (similar
+confused with the single `=` sign, which performs object assignment (similar
 to `<-`).
 
 A common task is to search for certain strings in a vector.  One could use the
